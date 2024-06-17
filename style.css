@@ -1,0 +1,58 @@
+
+#nav
+{
+    background-color: white;
+    margin: 10px;
+    border-radius: 20px;
+    position: fixed;
+}
+#logo
+{
+    color: #009970;
+    font-weight: 700;
+}
+.login-button
+{
+    background-color: #009970;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 20px;
+    border-radius: 50px;
+}
+.login-button:hover
+{
+    background-color: #00b383;
+}
+#toggle,#close{
+    border: none;
+    font-size: 18px;
+    box-shadow: none;
+}
+/* hover underline */
+#link
+{
+    font-weight: 600;
+    position: relative;
+}
+@media (min-width:992px)
+{
+#link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #009970;
+    visibility: hidden;
+    transition: 0.2s ease-in-out;
+}
+#link:hover::before,#link.active::before{
+    width: 100%;
+    visibility: visible;
+}
+}
+
+
